@@ -84,4 +84,12 @@ class Projects extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'project_owner_id']);
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProjectFiles()
+    {
+        return $this->hasMany(Files::className(), ['project_id' => 'id']);
+    }
+
 }

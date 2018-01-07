@@ -43,6 +43,7 @@ class ProjectsSearch extends Projects
     {
         $query = Projects::find();
 
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -63,6 +64,7 @@ class ProjectsSearch extends Projects
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'project_owner_id' => Yii::$app->user->getId()
         ]);
 
         $query->andFilterWhere(['like', 'project_name', $this->project_name])

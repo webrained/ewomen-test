@@ -118,3 +118,57 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+#files-image {
+    display: none;
+}
+.hide-detailView {
+    display: none;
+}
+.view-form label {
+    width: 47px;
+    height: 47px;
+    border: 1px solid limegreen;
+    display: inline-block;
+}
+.files {
+    width: 47px;
+    height: 47px;
+    border: 1px solid limegreen;
+    display: inline-block;
+    float: left;
+}
+.view-form label i, .files i {
+    font-size: 40px;
+    margin-top: 2px;
+    margin-left: 4px;
+    color: #449d44;
+}
+
+.file_wrapper {
+    position: relative;
+    float: left;
+}
+
+i.remove {
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    right: -5px;
+    top: -7px;
+    color: red;
+}
+
+.view-form button {
+    margin-top: -20px;
+}
+.red {
+    color: red;
+}
+.project-type, .technology-type {
+    display: inline-block;
+    background: #449D44;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
