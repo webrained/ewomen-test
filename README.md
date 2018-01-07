@@ -1,7 +1,7 @@
 #### Clone the repository to your local environment to the server accessible folder
-#### Create utf-8_general_ci Database
-#### Open up in your editor following file /common/config/main.php , set your credentials for DB connection 
-#### On windows/linux open cmd/terminnal type following "cd/path_to_your_project", when you are in your project directory type following "php yii migrate"
+#### On windows/linux open cmd/terminal type following "cd/path_to_your_project", when you are in your project directory type following "php yii migrate"
+#### Create utf-8_general_ci Database 
+#### Open up in your editor following file /common/config/main_local.php , set your credentials for DB connection
 #### Open browser navigate to localhost/your_project/frontend/web you need to sign up, go to the projects and after you can create update delete your own projects
 
 
