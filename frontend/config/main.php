@@ -12,6 +12,13 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=ewomen',  // <-- after dbname= set your own db name created before
+            'username' => 'root',  // your db username
+            'password' => '1211',   // your db password
+            'charset' => 'utf8',
+        ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
